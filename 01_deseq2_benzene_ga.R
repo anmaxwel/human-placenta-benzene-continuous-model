@@ -387,3 +387,7 @@ writeLines(capture.output(sessionInfo()), con = out_session)
 message("Wrote: ", out_session)
 
 message("Done.")
+
+# Save VST object for downstream gene-level plots
+saveRDS(vsd, file = file.path(out_dir, "vsd_continuous_benzene_GAadjusted.rds"))
+
